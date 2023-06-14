@@ -51,14 +51,14 @@ These instructions will get you a copy of the project up and running on your loc
 6. Trigger a dag with custom config (company name) -
    Postman POST method - http://localhost:8080/api/v1/dags/data_load/dagRuns - Sample body config given below -
     ```bash
-   {
-  "conf": {
-    "dataset_name": "20150226_ACIW"
-  },
-  "dag_run_id": "string17", 
-  "logical_date": "2023-06-11T17:06:08.694Z",
-  "note": "string"
-    }
+    {
+     "conf": {
+       "dataset_name": "20150226_ACIW"
+     },
+     "dag_run_id": "string17",
+     "logical_date": "2023-06-11T17:06:08.694Z",
+     "note": "string"
+   }
     ```
 7. Postman endpoints - 
 -  GET `/health` for health check
@@ -79,6 +79,7 @@ The application is hosted on GCP Cloud at IP address `34.23.24.122`. The differe
 - Airflow: `8080`
 - Streamlit: `30005`
 - Redis: `30002`
+- Fastapi: `30004`
 
 
 ## Usage
